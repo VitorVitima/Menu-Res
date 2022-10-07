@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 780px) and (max-width: 1100px) {
+    header > nav > div#menu {
+        display: none;
+    }
+    header > nav > div#links {
+        display: flex;
+        
+    }
+    header > nav > div#links > div {
+        margin: 5px 20px;
+    }
+    header > nav > div#links > div > a{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1101px) {
+    header > nav {
+        display: block;
+        width: 100%;
+    }
+    header > nav > #menu {
+        display: none;
+    }
+    header > nav > div#links {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+
+    }
+    header > nav > div#links > div {
+        margin: 5px 30px;
+    }
+    header > nav > div#links > div > a {
+        padding: 10px;
+    }
+    
+}
