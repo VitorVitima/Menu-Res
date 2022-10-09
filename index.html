@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/mediaQuery.css">
     <title>Menuzin</title>
 </head>
-<body>
+<body onresize="menuSize()">
     <header>
         <h1>Menu Responsivo</h1>
         <nav>
@@ -42,6 +42,14 @@
         </article>
     </main>
     <script>
+        function menuSize () {
+            if (window.innerWidth >= 670) {
+                links.style.display = 'flex'
+            } else {
+                links.style.display = 'none'
+            }
+        }
+
         function clickMenu () {
             if (links.style.display == 'block') {
                 links.style.display = 'none'
